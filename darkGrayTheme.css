@@ -1,0 +1,92 @@
+@-moz-document domain("paper.dropbox.com") {
+/*
+ * Theme for Dropbox Paper - Dark Gray(Dropbox Paper)
+ * Author  : Po Chun(Sky)
+ * License : Creative CC
+ * Created : Nov 04, 2016
+ * 
+ */
+
+
+/***********************************************
+ * Background - Color
+ ***********************************************/
+
+/* body & header & toolbar & table & bottom-right button : background color */
+body,
+#main-header,
+.main-header-right,
+.insert-rich-object-toolbar-wrapper .insert-toolbar-overlay,
+.ace-table,
+.hp-versions-button,
+.dmc-button-secondary{
+	background-color: #000000;
+}
+
+/* main content & left sidebar : background color */
+.ace-editor ,
+.hp-toc .hp-toc-entries {
+     background-color: rgba(0,0,0,0);   
+}
+
+/* header : baseline */
+#main-header-container {
+	box-shadow: 0 1px rgba(255,255,255,0.5);
+}
+
+
+/***********************************************
+ * Font - Family & Color
+ ***********************************************/
+
+/* main content : font family */
+.ace-editor {
+    font-family: monospace,AtlasGrotesk-editor,sans-serif;
+}
+
+/* main content : font color */
+body,
+.ace-editor,
+.hp-toc .hp-toc-entry-link,
+.hp-versions-button,
+.hp-header-title,
+.dmc-button-secondary{
+	color: #EEEEEE;
+}
+
+/* header > folder name of this paper : font color */
+.hp-pad-folder a, 
+.hp-pad-folder a:active, 
+.hp-pad-folder a:link, 
+.hp-pad-folder a:visited {
+    color: rgb(212, 212, 212);
+}
+
+/* left sidebar > active link : font color */
+.hp-toc .hp-toc-entry-current .hp-toc-entry-link,
+.hp-toc .hp-toc-entry:hover .hp-toc-entry-link {
+    color: rgb(22, 255, 9);
+}
+
+/* Comment font hightlight : font color */
+body.show-comments span.attrcomment, 
+body.underline-comments span.attrcomment{
+	border-bottom-color: rgb(50, 166, 89);
+    background-color: rgb(50, 166, 89)!important;
+}
+
+/* icon color */
+.dmc-button .svg-icon {
+    fill: #34AF5D;
+}
+
+/***********************************************
+ * Others
+ ***********************************************/
+
+/* hide the scroll-bar of left sidebar */
+.hp-toc::-webkit-scrollbar { 
+    display: none; 
+}
+
+}
