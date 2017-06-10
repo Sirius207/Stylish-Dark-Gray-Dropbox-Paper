@@ -4,7 +4,7 @@
  * Author  : Po Chun(Sky)
  * License : Creative CC
  * Created : Nov 04, 2016
- * 
+ *
  */
 
 
@@ -19,15 +19,36 @@ body,
 .insert-rich-object-toolbar-wrapper .insert-toolbar-overlay,
 .ace-table,
 .hp-versions-button,
-.dmc-button-secondary{
-	background-color: #000000;
+.dmc-button-secondary,
+.insert-toolbar-preview-image,
+.insert-button {
+	background-color: /*[[bgColor]]*/;
 }
+
+/* input preview & code block :background color */
+.insert-toolbar-preview-image .insert-toolbar-preview-image-inner,
+.insert-toolbar-preview-image:hover .insert-toolbar-preview-image-inner ,
+.ace-line .insert-toolbar-preview,
+.ace-editor .line-list-type-code,
+code.listtype-code .insert-toolbar-preview-input {
+	background-color: /*[[previewColor]]*/;
+}
+
 
 /* main content & left sidebar : background color */
 .ace-editor ,
 .hp-toc .hp-toc-entries {
-     background-color: rgba(0,0,0,0);   
+     background-color: rgba(0,0,0,0);
 }
+
+/* main content > checkbox (onfocus & onhover): font color*/
+@media (min-width: 600px){
+.ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.ace-task-line-highlighted, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.ace-task-line-highlighted {
+    background-color: #f7f9fa;
+    color: rgba(0,0,0,0.8);
+	}
+}
+
 
 /* header : baseline */
 #main-header-container {
@@ -40,24 +61,27 @@ body,
  ***********************************************/
 
 /* main content : font family */
-.ace-editor {
-    font-family: monospace,AtlasGrotesk-editor,sans-serif;
+.ace-editor,
+.ace-feature-bigtitle>.ace-editor>div:first-child {
+    font-family: /*[[fontFamily]]*/,AtlasGrotesk-editor,sans-serif;
 }
 
-/* main content : font color */
+/* main content & code font: font color */
 body,
 .ace-editor,
 .hp-toc .hp-toc-entry-link,
 .hp-versions-button,
 .hp-header-title,
-.dmc-button-secondary{
-	color: #EEEEEE;
+.dmc-button-secondary,
+.ace-editor code.listtype-code,
+.insert-button {
+	color: /*[[fontColor]]*/;
 }
 
 /* header > folder name of this paper : font color */
-.hp-pad-folder a, 
-.hp-pad-folder a:active, 
-.hp-pad-folder a:link, 
+.hp-pad-folder a,
+.hp-pad-folder a:active,
+.hp-pad-folder a:link,
 .hp-pad-folder a:visited {
     color: rgb(212, 212, 212);
 }
@@ -69,7 +93,7 @@ body,
 }
 
 /* Comment font hightlight : font color */
-body.show-comments span.attrcomment, 
+body.show-comments span.attrcomment,
 body.underline-comments span.attrcomment{
 	border-bottom-color: rgb(50, 166, 89);
     background-color: rgb(50, 166, 89)!important;
@@ -77,7 +101,7 @@ body.underline-comments span.attrcomment{
 
 /* icon color */
 .dmc-button .svg-icon {
-    fill: #34AF5D;
+    fill: /*[[iconColor]]*/;
 }
 
 /***********************************************
@@ -85,8 +109,8 @@ body.underline-comments span.attrcomment{
  ***********************************************/
 
 /* hide the scroll-bar of left sidebar */
-.hp-toc::-webkit-scrollbar { 
-    display: none; 
+.hp-toc::-webkit-scrollbar {
+    display: none;
 }
 
 }
