@@ -14,7 +14,7 @@
 
 /* body & header & toolbar & table & bottom-right button : background color */
 body,
-#main-header,
+#main-header-container,
 .main-header-right,
 .insert-rich-object-toolbar-wrapper .insert-toolbar-overlay,
 .ace-table,
