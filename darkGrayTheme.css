@@ -34,6 +34,14 @@ code.listtype-code .insert-toolbar-preview-input {
 	background-color: /*[[previewColor]]*/;
 }
 
+/* Task List (Hover) : background olor & font color*/
+@media (min-width: 600px){
+.ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.ace-task-line-highlighted, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.ace-task-line-highlighted {
+		background-color:  /*[[previewColor]]*/!important;
+    	        color: /*[[fontColor]]*/!important;
+	}
+}
+
 
 /* main content & left sidebar : background color */
 .ace-editor ,
