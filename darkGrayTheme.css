@@ -19,11 +19,12 @@ body,
 .insert-rich-object-toolbar-wrapper .insert-toolbar-overlay,
 .ace-table,
 .hp-versions-button,
-.dmc-button-secondary,
 .insert-toolbar-preview-image,
 .insert-button,
-.hp-menu,
-a.dmc-button-secondary, {
+#hp-editor-hotkeys-button, #hp-editor-bug-button,
+#hp-editor-exp-assist-buttons,
+a.dmc-button-secondary,
+.hp-menu {
 	background-color: /*[[bgColor]]*/;
 }
 
@@ -81,7 +82,9 @@ body,
 .dmc-button-secondary,
 .ace-editor code.listtype-code,
 .insert-button,
-.ace-line-task-controls-due-date-button {
+.ace-line-task-controls-due-date-button,
+.hp-menu-standard>ul>li .hpx-button, 
+.DayPicker {
 	color: /*[[fontColor]]*/;
 }
 
