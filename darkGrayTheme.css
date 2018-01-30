@@ -4,7 +4,7 @@
  * Author  : Po Chun(Sky)
  * License : Creative CC
  * Created : Nov 04, 2016
- *
+ * Updated : Jan 30, 2018
  */
 
 
@@ -21,40 +21,38 @@ body,
 .hp-versions-button,
 .dmc-button-secondary,
 .insert-toolbar-preview-image,
-.insert-button {
+.insert-button,
+.hp-menu,
+a.dmc-button-secondary, {
 	background-color: /*[[bgColor]]*/;
 }
 
-/* input preview & code block :background color */
+/* input preview & code block & hp-menu list(:hover) :background color */
 .insert-toolbar-preview-image .insert-toolbar-preview-image-inner,
 .insert-toolbar-preview-image:hover .insert-toolbar-preview-image-inner ,
 .ace-line .insert-toolbar-preview,
 .ace-editor .line-list-type-code,
-code.listtype-code .insert-toolbar-preview-input {
+code.listtype-code .insert-toolbar-preview-input,
+.hp-menu-standard>ul>li .hpx-button:hover {
 	background-color: /*[[previewColor]]*/;
 }
 
-/* Task List (Hover) : background olor & font color*/
-@media (min-width: 600px){
-.ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.ace-task-line-highlighted, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.ace-task-line-highlighted {
+/* Task List (Hover) : background color & font color*/
+@media (min-width: 600px) {
+    .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.focused-line, 
+    .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.focused-line, 
+    .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.ace-task-line-highlighted, 
+    .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.ace-task-line-highlighted {
 		background-color:  /*[[previewColor]]*/!important;
-    	        color: /*[[fontColor]]*/!important;
+        color: /*[[fontColor]]*/!important;
 	}
 }
 
-
-/* main content & left sidebar : background color */
+/* main content & left sidebar & insert toolbar */
 .ace-editor ,
-.hp-toc .hp-toc-entries {
-     background-color: rgba(0,0,0,0);
-}
-
-/* main content > checkbox (onfocus & onhover): font color*/
-@media (min-width: 600px){
-.ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.focused-line, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-task.ace-task-line-highlighted, .ace-feature-due-dates .zoneId-0>.ace-line.line-list-type-taskdone.ace-task-line-highlighted {
-    background-color: #f7f9fa;
-    color: rgba(0,0,0,0.8);
-	}
+.hp-toc .hp-toc-entries,
+.right-insert-toolbar-wrapper .insert-toolbar-overlay {
+    background: none;
 }
 
 
@@ -74,7 +72,7 @@ code.listtype-code .insert-toolbar-preview-input {
     font-family: /*[[fontFamily]]*/,AtlasGrotesk-editor,sans-serif;
 }
 
-/* main content & code font: font color */
+/* main content & code & task due date font: font color */
 body,
 .ace-editor,
 .hp-toc .hp-toc-entry-link,
@@ -82,7 +80,8 @@ body,
 .hp-header-title,
 .dmc-button-secondary,
 .ace-editor code.listtype-code,
-.insert-button {
+.insert-button,
+.ace-line-task-controls-due-date-button {
 	color: /*[[fontColor]]*/;
 }
 

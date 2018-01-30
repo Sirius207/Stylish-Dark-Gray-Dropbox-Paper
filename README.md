@@ -5,12 +5,17 @@ A dark gray theme with monospace font for Dropbox Paper to protect your eyes at 
 
 # Notes
 - **Changelog**
+	- Version 0.7.5:
+		- [Set] - Background color of insert toolbar to none
+		- [Set] - Background color of todo icon & hp menu to custom background color
+		- [Set] - Font color of task due day & hp menu text to custom font color
+		- [Set] - Background color of hp menu list to custom previewColor
  	- Version 0.7:
-		- [Fix] - Reset ClassName to support the latest update of Paper
-		- [Set] - Set Title Font Family to monospace
-		- [Set] - Input Preview Background color: #131313
+		- [Fix] - Reset className to support the latest update of Paper
+		- [Set] - Set title font family to monospace
+		- [Set] - Input preview background color: #131313
 	- Version 0.6:
-		- [Set] - Checkbox Font Color: rgba(0,0,0,0.8)
+		- [Set] - Checkbox font color: rgba(0,0,0,0.8)
 	- Version 0.5:
 		- [Set] - Background Color: #262626
 		- [Set] - Font Color : #eee
