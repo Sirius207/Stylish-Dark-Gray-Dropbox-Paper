@@ -4,7 +4,7 @@
  * Author  : Po Chun(Sky)
  * License : Creative CC
  * Created : Nov 04, 2016
- * Updated : Jan 30, 2018
+ * Updated : Jan 31, 2018
  */
 
 
@@ -106,7 +106,7 @@ body,
 body.show-comments span.attrcomment,
 body.underline-comments span.attrcomment{
 	border-bottom-color: rgb(50, 166, 89);
-    background-color: rgb(50, 166, 89)!important;
+    background-color:  /*[[highlightColor]]*/!important;
 }
 
 /* icon color */

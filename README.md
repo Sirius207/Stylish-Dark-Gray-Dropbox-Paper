@@ -10,6 +10,7 @@ A dark gray theme with monospace font for Dropbox Paper to protect your eyes at 
 		- [Set] - Background color of todo icon & hp menu to custom background color
 		- [Set] - Font color of task due day & hp menu text to custom font color
 		- [Set] - Background color of hp menu list to custom previewColor
+		- [Set] - Comments highlight color to custom color
  	- Version 0.7:
 		- [Fix] - Reset className to support the latest update of Paper
 		- [Set] - Set title font family to monospace
